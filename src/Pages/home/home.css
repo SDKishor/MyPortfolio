@@ -1,0 +1,227 @@
+.heroSec,
+.aboutSec,
+.projectSec {
+  display: flex;
+  min-height: 90vh;
+  max-height: 850px;
+}
+.herocontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.herocontent h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--text-secondary-color);
+  margin: 10px 0px;
+}
+
+.herocontent h1,
+.aboutContent h1,
+.projectSec h1 {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--text-primary-color);
+  margin: 10px 0px;
+  line-height: 80px;
+}
+.herocontent p {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 300;
+  color: var(--text-secondary-color);
+  margin: 10px 0px;
+  line-height: 45px;
+  width: 90%;
+}
+
+.herocontent .socialMedia {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.socialMedia span {
+  margin-right: 20px;
+}
+.socialMedia .icon {
+  font-size: 50px;
+  margin: 0px 10px;
+  color: var(--text-primary-color);
+}
+.socialMedia .icon:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.heroBtn {
+  margin-top: 20px;
+  text-align: center;
+  width: 350px;
+  background-color: var(--text-primary-color);
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 5px solid var(--text-primary-color);
+}
+.heroBtn svg {
+  padding-right: 10px;
+}
+.heroBtn:hover {
+  background-color: var(--background-color);
+  color: var(--text-primary-color);
+}
+
+.heroImagecontent {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.image_container {
+  position: relative;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image_container img {
+  width: 80%;
+}
+
+.image_container .blob {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  left: -40px;
+  bottom: -40px;
+  background-position: center/left;
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
+
+/* About section */
+.aboutSec {
+  align-items: center;
+}
+
+.aboutImage {
+  width: 50%;
+}
+.aboutContent {
+  width: 50%;
+}
+.aboutmeImage img {
+  width: 80%;
+}
+
+.aboutContent h4 {
+  font-size: 30px;
+  margin: 0px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+}
+
+.aboutContent p {
+  text-align: justify;
+  font-size: 22px;
+  width: 90%;
+  margin: 0px;
+  font-weight: 300;
+  color: var(--text-secondary-color);
+}
+
+.btnContainer {
+  margin-top: 30px;
+}
+
+.btnContainer button {
+  text-transform: uppercase;
+  padding: 12px 30px;
+  color: var(--text-primary-color);
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btnContainer button:active {
+  transform: scale(0.98);
+}
+
+.btnContainer svg {
+  margin: 0px 15px;
+  font-size: 20px;
+}
+
+.ResumeBtn {
+  background-color: var(--text-primary-color);
+  color: #fff !important;
+}
+
+.DownloadBtn {
+  background-color: transparent;
+  border: 3px solid var(--text-primary-color);
+}
+
+/* project section */
+.projectContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.projectContainer {
+  margin-top: 20px;
+  height: 600px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  place-items: start;
+}
+
+.projectContent .projectContainer div {
+  width: 280px;
+  height: 280px;
+  background-color: var(--field-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.projectContent .projectContainer div:hover {
+  /* border: 3px solid var(--primary-color); */
+  box-shadow: 0px 5px 15px -8px var(--primary-color);
+}
+.projectImagesec {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.projectImagesec .projectImage {
+  width: 80%;
+}
+.projectImagesec .projectImage img {
+  width: 100%;
+}
+
+.moreBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  color: var(--primary-color);
+}

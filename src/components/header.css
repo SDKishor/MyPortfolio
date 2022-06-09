@@ -1,0 +1,98 @@
+header {
+  min-height: 100px;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  z-index: 10;
+  top: 0px;
+  background-color: var(--background-color);
+}
+
+.activeLink {
+  color: var(--primary-color) !important;
+  font-weight: bold;
+  border-bottom: 5px solid;
+}
+
+.logo_container {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 44px;
+}
+
+.logo_container a {
+  text-decoration: none;
+  color: var(--text-primary-color);
+}
+.links_container {
+  display: flex;
+  align-items: center;
+}
+
+.links_container nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.links_container nav ul li {
+  font-family: "Segoe Script", "Oleo Script Swash Caps";
+  font-size: 25px;
+  padding: 0px 20px;
+}
+
+.links_container nav ul li a {
+  text-decoration: none;
+  color: var(--text-primary-color);
+}
+.links_container nav ul li button {
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.contactBtn {
+  font-family: "Segoe Script", "Oleo Script Swash Caps";
+  height: 65px;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--primary-color);
+  padding: 0px 20px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 3px solid var(--primary-color);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.contactBtn::after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  transition: all 0.75s ease 0s;
+  background: var(--primary-color);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+.contactBtn:hover::after {
+  height: 450%;
+}
+.contactBtn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.contactBtn:active {
+  transform: scale(0.95);
+}
